@@ -6,22 +6,22 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você está alinhado na pista. A luz amarela do pinheirinho acendeu. O que você faz?",
+        enunciado: "Assim que saiu do treino do projeto social, Gabriel se depara com uma oportunidade: um olheiro de um grande clube europeu está na cidade para avaliar novos talentos e oferece um teste no exterior, mas Gabriel não tem dinheiro nem para as passagens. Qual o primeiro pensamento de Gabriel?",
         alternativas: [
             {
                 texto: "Pressionar o acelerador ao máximo e largar com tudo.",
-                afirmacao: "Você largou com agressividade máxima. ",
+                afirmacao: "Isso é assustador!. ",
                 proxima: 1
             },
             {
                 texto: "Dosar o pé na embreagem para evitar que os pneus girem em falso.",
-                afirmacao: "Sua largada foi perfeita e você manteve total controle da tração. ",
+                afirmacao: "Isso é maravilhoso. ",
                 proxima: 2
             }
         ]
     },
     {
-        enunciado: "Você acelerou demais, os pneus fritaram no asfalto e o carro destracionou. O adversário colocou meio carro na frente. Como reagir?",
+        enunciado: "Sabendo das dificuldades financeiras da sua família, Gabriel precisa decidir como vai se preparar para essa oportunidade decisiva na sua carreira. O que Gabriel faz?",
         alternativas: [
             {
                 texto: "Fazer uma troca de marcha rápida e agressiva no limite do giro.",
@@ -51,7 +51,19 @@ const perguntas = [
         ]
     }
 ];
-
+enunciado: "Você acelerou demais, os pneus fritaram no asfalto e o carro destracionou. O adversário colocou meio carro na frente. Como reagir?",
+        alternativas: [
+            {
+                texto: "Fazer uma troca de marcha rápida e agressiva no limite do giro.",
+                afirmacao: "O motor respondeu bem, você recuperou a diferença e cruzou a linha lado a lado. [Vitória por milésimos]",
+                proxima: null
+            },
+            {
+                texto: "Injetar o Nitro imediatamente para compensar a perda de espaço.",
+                afirmacao: "O excesso de potência com pouca aderência fez o carro rabejar. Você teve que tirar o pé. [Derrota por segurança]",
+                proxima: null
+            }
+        ]
 let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
